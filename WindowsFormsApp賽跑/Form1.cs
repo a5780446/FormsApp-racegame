@@ -86,33 +86,9 @@ namespace WindowsFormsApp賽跑
             button1.Enabled = true;
         }
 
-        private void timer4_Tick(object sender, EventArgs e)
-        {
-            timer4.Interval = z4;
-            pictureBox4.Left += 10;
-            if (pictureBox4.Left > pictureBox0.Width - 80 && radioButton4.Checked==true)
-            {
-                timer1.Stop();
-                timer2.Stop();
-                timer3.Stop();
-                timer4.Stop();
-                timer5.Stop();
-                MessageBox.Show("4號為勝利者,恭喜贏得獎金");
-            }
-            else if(pictureBox4.Left > pictureBox0.Width - 80)
-            {
-                timer1.Stop();
-                timer2.Stop();
-                timer3.Stop();
-                timer4.Stop();
-                timer5.Stop();
-                MessageBox.Show("4號為勝利者,再接再厲");
-            }
-        }
-
         private void button3_Click(object sender, EventArgs e) //下注金額判斷
         {
-            if (int.Parse(textBox1.Text) % 50 != 0 )
+            if (int.Parse(textBox1.Text) % 50 != 0)
             {
                 MessageBox.Show("以50為單位下注,謝謝客官~");
                 textBox1.Text = "";
@@ -131,6 +107,43 @@ namespace WindowsFormsApp賽跑
             }
         }
 
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            timer4.Interval = z4;
+            pictureBox4.Left += 10;
+            if (pictureBox4.Left > pictureBox0.Width - 80 && radioButton4.Checked==true)
+            {
+                timer1.Stop();
+                timer2.Stop();
+                timer3.Stop();
+                timer4.Stop();
+                timer5.Stop();
+                MessageBox.Show("4號為勝利者,恭喜贏得獎金");
+                
+                money += math(int.Parse(textBox1.Text), xx);
+                label1.Text = money.ToString();
+            }
+            else if(pictureBox4.Left > pictureBox0.Width - 80)
+            {
+                timer1.Stop();
+                timer2.Stop();
+                timer3.Stop();
+                timer4.Stop();
+                timer5.Stop();
+                MessageBox.Show("4號為勝利者,再接再厲");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)  //跑者歸位
+        {
+            pictureBox1.Left = pictureBox0.Left + 5;
+            pictureBox2.Left = pictureBox0.Left + 5;
+            pictureBox3.Left = pictureBox0.Left + 5;
+            pictureBox4.Left = pictureBox0.Left + 5;
+            pictureBox5.Left = pictureBox0.Left + 5;
+            button1.Enabled = true;
+        }
+
         private void timer5_Tick(object sender, EventArgs e)
         {
             timer5.Interval = z5;
@@ -143,6 +156,9 @@ namespace WindowsFormsApp賽跑
                 timer4.Stop();
                 timer5.Stop();
                 MessageBox.Show("5號為勝利者,恭喜贏得獎金");
+                money += math(int.Parse(textBox1.Text), xx);
+                label1.Text = money.ToString();
+
             }
             else if(pictureBox5.Left > pictureBox0.Width - 80)
             {
@@ -167,6 +183,8 @@ namespace WindowsFormsApp賽跑
                 timer4.Stop();
                 timer5.Stop();
                 MessageBox.Show("1號為勝利者,恭喜贏得獎金");
+                money += math(int.Parse(textBox1.Text), xx);
+                label1.Text = money.ToString();
             }
             else if (pictureBox1.Left > pictureBox0.Width - 80)
             {
@@ -194,6 +212,8 @@ namespace WindowsFormsApp賽跑
                 timer4.Stop();
                 timer5.Stop();
                 MessageBox.Show("2號為勝利者,恭喜贏得獎金");
+                money += math(int.Parse(textBox1.Text), xx);
+                label1.Text = money.ToString();
             }
             else if(pictureBox2.Left > pictureBox0.Width - 80)
             {
@@ -218,6 +238,8 @@ namespace WindowsFormsApp賽跑
                 timer4.Stop();
                 timer5.Stop();
                 MessageBox.Show("3號為勝利者,恭喜贏得獎金");
+                money += math(int.Parse(textBox1.Text), xx);
+                label1.Text = money.ToString();
             }
             else if (pictureBox3.Left > pictureBox0.Width - 80)
             {

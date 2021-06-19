@@ -49,11 +49,12 @@ namespace WindowsFormsApp賽跑
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -65,7 +66,7 @@ namespace WindowsFormsApp賽跑
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(509, 469);
+            this.button1.Location = new System.Drawing.Point(542, 469);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 70);
             this.button1.TabIndex = 6;
@@ -99,47 +100,57 @@ namespace WindowsFormsApp賽跑
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(12, 374);
+            this.pictureBox5.Image = global::WindowsFormsApp賽跑.Properties.Resources.跑者5;
+            this.pictureBox5.Location = new System.Drawing.Point(5, 374);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(53, 51);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(12, 291);
+            this.pictureBox4.Image = global::WindowsFormsApp賽跑.Properties.Resources.跑者4;
+            this.pictureBox4.Location = new System.Drawing.Point(5, 291);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(53, 51);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(12, 207);
+            this.pictureBox3.Image = global::WindowsFormsApp賽跑.Properties.Resources.跑者3;
+            this.pictureBox3.Location = new System.Drawing.Point(5, 207);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(53, 51);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(12, 113);
+            this.pictureBox2.Image = global::WindowsFormsApp賽跑.Properties.Resources.跑者2;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 113);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(53, 51);
+            this.pictureBox2.Size = new System.Drawing.Size(51, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 22);
+            this.pictureBox1.Image = global::WindowsFormsApp賽跑.Properties.Resources.跑者1;
+            this.pictureBox1.Location = new System.Drawing.Point(4, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(53, 51);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox0
             // 
-            this.pictureBox0.Image = global::WindowsFormsApp賽跑.Properties.Resources.背景;
+            this.pictureBox0.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox0.Image")));
             this.pictureBox0.Location = new System.Drawing.Point(1, 1);
             this.pictureBox0.Name = "pictureBox0";
             this.pictureBox0.Size = new System.Drawing.Size(792, 424);
@@ -203,38 +214,16 @@ namespace WindowsFormsApp賽跑
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "選擇";
             // 
-            // radioButton1
+            // radioButton5
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(7, 22);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(29, 16);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "1";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(7, 39);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(29, 16);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "2";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(7, 58);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(29, 16);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(7, 92);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(29, 16);
+            this.radioButton5.TabIndex = 4;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "5";
+            this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // radioButton4
             // 
@@ -247,22 +236,55 @@ namespace WindowsFormsApp賽跑
             this.radioButton4.Text = "4";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // radioButton3
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(7, 92);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(29, 16);
-            this.radioButton5.TabIndex = 4;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "5";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(7, 58);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(29, 16);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "3";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(7, 39);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(29, 16);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "2";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(7, 22);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(29, 16);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(446, 476);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(90, 57);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "再來一次";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(803, 549);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox1);
@@ -316,6 +338,7 @@ namespace WindowsFormsApp賽跑
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button button4;
     }
 }
 

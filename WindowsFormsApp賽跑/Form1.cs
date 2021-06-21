@@ -148,6 +148,14 @@ namespace WindowsFormsApp賽跑
             pictureBox4.Left = pictureBox0.Left + 5;
             pictureBox5.Left = pictureBox0.Left + 5;
             button1.Enabled = true;
+
+            Random rantime = new Random(); //亂數給(sleep)的時間
+            z1 = rantime.Next(50, 85);
+            z2 = rantime.Next(50, 85);
+            z3 = rantime.Next(50, 85);
+            z4 = rantime.Next(50, 85);
+            z5 = rantime.Next(50, 85);
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

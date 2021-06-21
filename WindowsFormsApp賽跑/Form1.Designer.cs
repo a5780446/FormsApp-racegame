@@ -55,6 +55,8 @@ namespace WindowsFormsApp賽跑
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.button4 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -76,11 +78,11 @@ namespace WindowsFormsApp賽跑
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(685, 469);
+            this.button2.Location = new System.Drawing.Point(717, 440);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 70);
+            this.button2.Size = new System.Drawing.Size(76, 29);
             this.button2.TabIndex = 7;
-            this.button2.Text = "暫停";
+            this.button2.Text = "暫停-作弊";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -192,7 +194,7 @@ namespace WindowsFormsApp賽跑
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(297, 504);
+            this.button3.Location = new System.Drawing.Point(284, 503);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 11;
@@ -271,19 +273,41 @@ namespace WindowsFormsApp賽跑
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(446, 476);
+            this.button4.Location = new System.Drawing.Point(446, 470);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 57);
+            this.button4.Size = new System.Drawing.Size(90, 67);
             this.button4.TabIndex = 13;
             this.button4.Text = "再來一次";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 442);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 12);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "您得金錢:";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(284, 441);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(53, 12);
+            this.linkLabel1.TabIndex = 15;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "遊戲說明";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(803, 549);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button3);
@@ -339,6 +363,8 @@ namespace WindowsFormsApp賽跑
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

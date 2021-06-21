@@ -50,11 +50,11 @@ namespace WindowsFormsApp賽跑
             pictureBox4.Image = imageList1.Images[3];
             pictureBox5.Image = imageList1.Images[4];
             Random rantime = new Random(); //亂數給(sleep)的時間
-            z1 = rantime.Next(50, 100);
-            z2 = rantime.Next(50, 100);
-            z3 = rantime.Next(50, 100);
-            z4 = rantime.Next(50, 100);
-            z5 = rantime.Next(50, 100);
+            z1 = rantime.Next(50, 85);
+            z2 = rantime.Next(50, 85);
+            z3 = rantime.Next(50, 85);
+            z4 = rantime.Next(50, 85);
+            z5 = rantime.Next(50, 85);
 
             
             label1.Text = money.ToString();
@@ -88,15 +88,21 @@ namespace WindowsFormsApp賽跑
 
         private void button3_Click(object sender, EventArgs e) //下注金額判斷
         {
-            if (int.Parse(textBox1.Text) % 50 != 0)
+            if (int.Parse(textBox1.Text) % 50 != 0 )
             {
                 MessageBox.Show("以50為單位下注,謝謝客官~");
                 textBox1.Text = "";
                 textBox1.Focus();
             }
+            else if (int.Parse(textBox1.Text) > money)
+            {
+                MessageBox.Show("請節制,不接受賒帳");
+                textBox1.Text = "";
+                textBox1.Focus();
+            }
             else
             {
-                if (int.Parse(textBox1.Text) > 800)
+                if (int.Parse(textBox1.Text) > 1000)
                     xx = 15;
                 else if (int.Parse(textBox1.Text) > 500)
                     xx = 8;
@@ -142,6 +148,11 @@ namespace WindowsFormsApp賽跑
             pictureBox4.Left = pictureBox0.Left + 5;
             pictureBox5.Left = pictureBox0.Left + 5;
             button1.Enabled = true;
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("說明.TXT");
         }
 
         private void timer5_Tick(object sender, EventArgs e)

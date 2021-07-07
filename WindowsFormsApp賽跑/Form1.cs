@@ -271,9 +271,7 @@ namespace WindowsFormsApp賽跑
             }
         }
 
-        /*希望大大可以教學一下:
-        我想把pictureBox[1 - 5] 都建立不同thread;
-        按button1,5條thread一起走*/
+        
 
 
 
